@@ -1,0 +1,25 @@
+{
+  "name": "international-student-semester-budget-planner",
+  "version": "1.0.0",
+  "description": "A semester budget planner for international students built with Node, Express, MongoDB native driver, HTML, CSS, and vanilla JavaScript.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/seedData.js",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.21.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2"
+  },
+  "license": "MIT"
+}

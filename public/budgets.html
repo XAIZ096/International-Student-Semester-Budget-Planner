@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budgets | Semester Budget Planner</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/budgets.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="logo" href="index.html">Semester Budget Planner</a>
+        <div class="nav-links">
+          <a href="index.html">Dashboard</a>
+          <a href="budgets.html">Budgets</a>
+          <a href="transactions.html">Transactions</a>
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container two-column">
+      <section class="panel" aria-labelledby="budget-form-title">
+        <h1 id="budget-form-title">Create Budget Category</h1>
+        <p>Plan semester spending for rent, tuition, food, travel, and daily life.</p>
+        <form id="budgetForm">
+          <input type="hidden" id="budgetId" />
+          <label for="category">Category</label>
+          <input id="category" name="category" required placeholder="Rent" />
+
+          <label for="semester">Semester</label>
+          <input id="semester" name="semester" required placeholder="Fall 2026" />
+
+          <label for="limitAmount">Budget Limit</label>
+          <input id="limitAmount" name="limitAmount" type="number" min="0" step="0.01" required />
+
+          <label for="currency">Currency</label>
+          <input id="currency" name="currency" required maxlength="3" placeholder="USD" />
+
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" placeholder="Optional notes"></textarea>
+
+          <div class="button-row">
+            <button type="submit">Save Budget</button>
+            <button id="resetBudgetForm" type="button" class="secondary">Clear</button>
+          </div>
+        </form>
+        <p id="budgetMessage" class="message" role="status"></p>
+      </section>
+
+      <section aria-labelledby="budget-list-title">
+        <h2 id="budget-list-title">Budget Categories</h2>
+        <div id="budgetList" class="list" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script type="module" src="js/budgets.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+# Rubric Checklist
+
+- [x] Design document includes project description, user personas, user stories, and mockups.
+- [x] App matches the approved #project proposal topic.
+- [x] App includes instructions on About page and README.
+- [x] App solves a real international student semester budgeting problem.
+- [x] ESLint config file included.
+- [x] Code organized into separate pages, routes, CSS files, JS modules, and database connector.
+- [x] JS organized in modules.
+- [x] Frontend uses client-side rendering with vanilla JavaScript only.
+- [x] Implements forms for budgets and transactions.
+- [x] Uses at least 2 MongoDB collections.
+- [x] Both collections support CRUD operations.
+- [x] Uses Node + Express.
+- [x] Prettier config included.
+- [x] Uses standard HTML tags such as form, button, input, select, textarea, nav, main, section.
+- [x] CSS organized by modules.
+- [x] README includes author, class link placeholder, objective, screenshot placeholder, and build instructions.
+- [x] Does not expose secret credentials.
+- [x] Includes package.json.
+- [x] Uses MIT license.
+- [x] No default Express users route, React favicon, or leftover scaffold code.
+- [x] Backend uses ES modules and no CommonJS require.
+- [x] Does not use Mongoose or template engines.
+- [ ] Deploy on a public server.
+- [ ] Add final screenshot.
+- [ ] Submit Google Form with correct thumbnail and working links.
+- [ ] Record short public narrated demo video.
+- [ ] Freeze code 24 hours before class.
+- [ ] Complete code review.

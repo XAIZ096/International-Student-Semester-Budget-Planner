@@ -1,0 +1,50 @@
+.hero {
+  background: linear-gradient(135deg, #e9f1ff, #ffffff);
+  border: 1px solid #dce3ef;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  max-width: 850px;
+}
+
+.eyebrow {
+  color: #1f6feb;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.summary-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 2rem;
+}
+
+.summary-card strong {
+  display: block;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+.progress-bar {
+  background: #e7edf7;
+  border-radius: 999px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.progress-value {
+  background: #1f6feb;
+  height: 100%;
+}
+
+@media (max-width: 760px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transactions | Semester Budget Planner</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/transactions.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="logo" href="index.html">Semester Budget Planner</a>
+        <div class="nav-links">
+          <a href="index.html">Dashboard</a>
+          <a href="budgets.html">Budgets</a>
+          <a href="transactions.html">Transactions</a>
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container two-column">
+      <section class="panel" aria-labelledby="transaction-form-title">
+        <h1 id="transaction-form-title">Add Transaction</h1>
+        <p>Record income from family support or expenses such as rent, food, and travel.</p>
+        <form id="transactionForm">
+          <input type="hidden" id="transactionId" />
+
+          <label for="description">Description</label>
+          <input id="description" name="description" required placeholder="Monthly rent" />
+
+          <label for="type">Type</label>
+          <select id="type" name="type" required>
+            <option value="expense">Expense</option>
+            <option value="income">Income</option>
+          </select>
+
+          <label for="amount">Amount</label>
+          <input id="amount" name="amount" type="number" min="0.01" step="0.01" required />
+
+          <label for="transactionCurrency">Currency</label>
+          <input
+            id="transactionCurrency"
+            name="currency"
+            maxlength="3"
+            required
+            placeholder="USD"
+          />
+
+          <label for="exchangeRateToUsd">Exchange Rate to USD</label>
+          <input
+            id="exchangeRateToUsd"
+            name="exchangeRateToUsd"
+            type="number"
+            min="0.01"
+            step="0.0001"
+            value="1"
+            required
+          />
+
+          <label for="date">Date</label>
+          <input id="date" name="date" type="date" required />
+
+          <label for="budgetId">Budget Category</label>
+          <select id="budgetId" name="budgetId" required></select>
+
+          <label for="transactionNotes">Notes</label>
+          <textarea id="transactionNotes" name="notes" placeholder="Optional notes"></textarea>
+
+          <div class="button-row">
+            <button type="submit">Save Transaction</button>
+            <button id="resetTransactionForm" type="button" class="secondary">Clear</button>
+          </div>
+        </form>
+        <p id="transactionMessage" class="message" role="status"></p>
+      </section>
+
+      <section aria-labelledby="transaction-list-title">
+        <div class="section-header">
+          <h2 id="transaction-list-title">Transactions</h2>
+          <select id="typeFilter" aria-label="Filter transactions by type">
+            <option value="">All</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </div>
+        <div id="transactionList" class="list" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script type="module" src="js/transactions.js"></script>
+  </body>
+</html>

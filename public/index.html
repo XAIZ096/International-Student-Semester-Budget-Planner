@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>International Student Semester Budget Planner</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="logo" href="index.html">Semester Budget Planner</a>
+        <div class="nav-links">
+          <a href="index.html">Dashboard</a>
+          <a href="budgets.html">Budgets</a>
+          <a href="transactions.html">Transactions</a>
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Built for international students</p>
+          <h1>Plan tuition, rent, food, travel, and family support in one semester view.</h1>
+          <p>
+            This app helps international students track budgets and transactions with currency
+            labels and manual exchange rates.
+          </p>
+          <div class="button-row">
+            <a class="button" href="budgets.html">Manage Budgets</a>
+            <a class="button secondary" href="transactions.html">Add Transaction</a>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="summary-title">
+        <h2 id="summary-title">Semester Summary</h2>
+        <div id="summaryCards" class="summary-grid" aria-live="polite"></div>
+      </section>
+
+      <section aria-labelledby="budget-progress-title">
+        <h2 id="budget-progress-title">Budget Progress</h2>
+        <div id="budgetSummary" class="card-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script type="module" src="js/dashboard.js"></script>
+  </body>
+</html>

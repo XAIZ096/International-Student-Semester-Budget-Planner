@@ -1,0 +1,91 @@
+.site-header {
+  background: white;
+  border-bottom: 1px solid #dce3ef;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 1rem;
+}
+
+.logo {
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #526173;
+  font-weight: 700;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 2rem 1rem;
+}
+
+.narrow {
+  max-width: 760px;
+}
+
+.two-column {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(300px, 420px) 1fr;
+}
+
+.panel,
+.card,
+.list-item {
+  background: white;
+  border: 1px solid #dce3ef;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(31, 51, 73, 0.06);
+  padding: 1.25rem;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.list,
+.card-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.section-header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.message {
+  color: #24633a;
+  font-weight: 700;
+  min-height: 1.4rem;
+}
+
+@media (max-width: 760px) {
+  .nav,
+  .nav-links,
+  .two-column {
+    align-items: stretch;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+}
