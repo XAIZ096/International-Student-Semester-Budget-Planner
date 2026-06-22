@@ -19,8 +19,27 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/api/budgets", budgetRoutes);
 app.use("/api/transactions", transactionRoutes);
 
+app.get("/", (_request, response) => {
+  response.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+app.get("/budgets", (_request, response) => {
+  response.sendFile(path.join(__dirname, "public", "budgets.html"));
+});
+
+app.get("/transactions", (_request, response) => {
+  response.sendFile(path.join(__dirname, "public", "transactions.html"));
+});
+
+app.get("/about", (_request, response) => {
+  response.sendFile(path.join(__dirname, "public", "about.html"));
+});
+
 app.get("/api/health", (_request, response) => {
-  response.json({ status: "ok", message: "International Student Budget Planner API is running" });
+  response.json({
+    status: "ok",
+    message: "International Student Budget Planner API is running",
+  });
 });
 
 app.use((_request, response) => {
