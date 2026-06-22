@@ -127,6 +127,10 @@ npm run format
 - `transactions.html`: transaction CRUD.
 - `about.html`: instructions for using the app.
 
+## Live Demo
+
+[https://international-student-semester-budget.onrender.com](https://international-student-semester-budget.onrender.com)
+
 ## Deployment
 
 Recommended deployment option: Render.
@@ -143,7 +147,7 @@ Do not upload `.env` to GitHub. The `.gitignore` file excludes `.env`.
 
 ## AI Usage Disclosure
 
-AI was used for planning, writing assistance, and code drafting support. The final code should be reviewed, tested, and understood before submission.
+AI was used for planning, writing assistance, and code drafting support. The final code reviewed, tested, and understood before submission.
 
 ## License
 
