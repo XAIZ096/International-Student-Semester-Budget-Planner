@@ -27,13 +27,13 @@ This project does not use:
 
 ## Screenshot
 
-![Dashboard Screenshot](public/images/dashboard.png)
+![Dashboard Screenshot](public/image/dashboard.png)
 
-![Budgets Screenshot](public/images/budgets.png)
+![Budgets Screenshot](public/image/budgets.png)
 
-![Transactions Screenshot](public/images/transactions.png)
+![Transactions Screenshot](public/image/transactions.png)
 
-![About Screenshot](public/images/about.png)
+![About Screenshot](public/image/about.png)
 
 Example location: `docs/screenshot.png`
 
