@@ -131,6 +131,10 @@ npm run format
 
 [https://international-student-semester-budget.onrender.com](https://international-student-semester-budget.onrender.com)
 
+## Demo Video
+
+[Watch Demo Video](https://youtu.be/O9RhK-QAivo)
+
 ## Deployment
 
 Recommended deployment option: Render.
